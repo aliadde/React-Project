@@ -4,13 +4,13 @@ function List() {
   return (
     <>
       <div className="list">
-        <div>your List</div>
-        <ul>
-          <li className="todos">todo1</li>
-          <li className="todos">todo2</li>
-          <li className="todos">todo3</li>
-          <li className="todos">todo4</li>
-          <li className="todos">todo5</li>
+        <h2 className="mb-6 mt-2">your List</h2>
+        <ul id="parent">
+          <li className="todos py-2 px-3 bg-cyan-900">todo1</li>
+          <li className="todos py-2 px-3 bg-cyan-900">todo2</li>
+          <li className="todos py-2 px-3 bg-cyan-900">todo3</li>
+          <li className="todos py-2 px-3 bg-cyan-900">todo4</li>
+          <li className="todos py-2 px-3 bg-cyan-900">todo5</li>
         </ul>
       </div>
     </>

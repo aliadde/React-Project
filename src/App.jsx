@@ -10,7 +10,6 @@ function App() {
       >
         <Input />
         <br />
-
         <List />
       </div>
     </>
