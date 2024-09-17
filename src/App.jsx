@@ -1,5 +1,6 @@
 import React from "react";
-
+import Input from "./component/Input.jsx";
+import List from "./component/List.jsx";
 function App() {
   return (
     <>
@@ -7,14 +8,8 @@ function App() {
         id="container"
         className=" m-10 p-8 grid-rows-3 grid justify-center  content-center items-center text-xl"
       >
-        <div className="box">
-          <div>write your Todo List</div>
-          <div>To Do</div>
-        </div>
-        <div className="Add">
-          <label htmlFor="todo">Add :</label>
-          <input type="text" name="todo" />
-        </div>
+        <Input />
+        <List />
       </div>
     </>
   );
