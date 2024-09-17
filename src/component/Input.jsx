@@ -3,16 +3,26 @@ import React from "react";
 function Input() {
   return (
     <>
-     
+      <div className="box-input-submit">
         <div className="box">
-          <div>write your Todo List</div>
+          <h1>write your Todo List</h1>
           <div>To Do</div>
         </div>
-        <div className="Add">
-          <label htmlFor="todo">Add :</label>
-          <input type="text" name="todo" />
-        </div>
-
+        <form>
+          <div className="Add">
+            <label htmlFor="todo">Add :</label>
+            <input type="text" name="todo" className="focus:animate-pulse" />
+          </div>
+          <button
+            type="submit"
+            id="sub"
+            name="todo"
+            className="hover:animate-pulse"
+          >
+            <div className="hover:animate-bounce">submit</div>
+          </button>
+        </form>
+      </div>
     </>
   );
 }

@@ -6,9 +6,11 @@ function App() {
     <>
       <div
         id="container"
-        className=" m-10 p-8 grid-rows-3 grid justify-center  content-center items-center text-xl"
+        className=" m-10 p-8 grid-rows-3 grid justify-center  gap-8 content-center items-center text-xl"
       >
         <Input />
+        <br />
+
         <List />
       </div>
     </>
