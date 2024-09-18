@@ -3,11 +3,11 @@ import Input from "./component/Input.jsx";
 import { Mycontext } from "./context.js";
 import { useState } from "react";
 function App() {
-  const [items, setItems] = useState(["shopping", "jugging"]);
-
+  const [items, setItems] = useState(["jugging"]);
+  const [todo, setTodo] = useState(null);
   return (
     <>
-      <Mycontext.Provider value={{ items, setItems }}>
+      <Mycontext.Provider value={{ todo, setTodo, items, setItems }}>
         <div
           id="container"
           className="grid items-center content-center justify-center grid-rows-3 gap-8 p-8 m-10 text-xl "

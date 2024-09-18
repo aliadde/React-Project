@@ -1,15 +1,18 @@
 import React, { useContext } from "react";
 import { Mycontext } from "../context.js";
 function Input() {
-  const { items, setItems } = useContext(Mycontext);
+  const { todo, setTodo, items, setItems } = useContext(Mycontext);
   // function to change add item todo
   const addItem = (event) => {
     event.preventDefault();
     console.log("another item");
-    setItems([...items, `Item ${items.length + 1}`]);
+    if (todo != null && todo != "") setItems([...items, `${todo}`]);
+    setTodo(null);
   };
+
   return (
     <>
+      
       <div className="box-input-submit">
         <div className="box">
           <h1>write your Todo List</h1>
@@ -18,7 +21,12 @@ function Input() {
         <form onSubmit={addItem}>
           <div className="Add">
             <label htmlFor="todo">Add :</label>
-            <input type="text" name="todo" className="focus:animate-pulse" />
+            <input
+              type="text"
+              name="todo"
+              className="focus:animate-pulse"
+              onChange={(event) => setTodo(event.target.value)}
+            />
           </div>
           <button
             type="submit"
