@@ -12,11 +12,10 @@ function Input() {
 
   return (
     <>
-      
-      <div className="box-input-submit">
-        <div className="box">
+      <div className="all">
+        <div className="head">
+          <h1>To Do</h1>
           <h1>write your Todo List</h1>
-          <div>To Do</div>
         </div>
         <form onSubmit={addItem}>
           <div className="Add">
@@ -35,21 +34,25 @@ function Input() {
             className="hover:animate-pulse"
             // onClick={addItem}
           >
-            <div className="hover:animate-bounce">submit</div>
+            <div className="hover:animate-bounce">Add</div>
           </button>
         </form>
-      </div>
-      <br />
-      {/* List */}
-      <div className="list">
-        <h2 className="mt-2 mb-6">your List</h2>
-        <ul id="parent">
-          {items.map((Items, index) => (
-            <li key={index} className="px-3 py-2 todos bg-cyan-900">
-              {Items}
-            </li>
-          ))}
-        </ul>
+
+        <br />
+        {/* List */}
+        <div className="list">
+          <h2 className="mt-2 mb-6">your List</h2>
+          <ul id="parent">
+            {items.map((Items, index) => (
+              <li key={index} className="px-3 py-2 todos bg-cyan-900">
+                <div className="order">
+                  <div>{index + 1}</div>
+                  <div>{Items}</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );

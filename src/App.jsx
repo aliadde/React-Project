@@ -3,7 +3,7 @@ import Input from "./component/Input.jsx";
 import { Mycontext } from "./context.js";
 import { useState } from "react";
 function App() {
-  const [items, setItems] = useState(["jugging"]);
+  const [items, setItems] = useState([]);
   const [todo, setTodo] = useState(null);
   return (
     <>
