@@ -1,0 +1,29 @@
+[33mcommit be66395ce3634360ca16765c7a93a79d2178a906[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: aliadde <aliadely1384@gmail.com>
+Date:   Tue Sep 17 13:02:29 2024 +0330
+
+    we just need functionallity with  java
+
+[33mcommit 04c089ae039e51f8f9be084c8863cede0825d240[m
+Author: aliadde <aliadely1384@gmail.com>
+Date:   Tue Sep 17 12:31:15 2024 +0330
+
+    input and title fixed
+
+[33mcommit e3aacf64ccd5731e9fe1b170953c50059e317983[m
+Author: aliadde <aliadely1384@gmail.com>
+Date:   Tue Sep 17 11:36:49 2024 +0330
+
+     component created
+
+[33mcommit 3958d1e91b70a27bdaebbe83cc6656920aeabb1e[m
+Author: aliadde <aliadely1384@gmail.com>
+Date:   Tue Sep 17 11:20:11 2024 +0330
+
+    we have done with title and input
+
+[33mcommit f6972044d1eff6c63da83744a616353310b4012f[m
+Author: aliadde <aliadely1384@gmail.com>
+Date:   Tue Sep 17 09:56:36 2024 +0330
+
+    setup vite react tailwind

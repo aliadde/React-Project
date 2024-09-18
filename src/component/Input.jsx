@@ -1,6 +1,7 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { Mycontext } from "../context.js";
 function Input() {
+  const { array } = useContext(Mycontext);
   return (
     <>
       <div className="box-input-submit">

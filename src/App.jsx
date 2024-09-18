@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import Input from "./component/Input.jsx";
 import List from "./component/List.jsx";
+import Mycontext from "./context.js";
+
 function App() {
+  const array = ["shopping", "jugging"];
   return (
     <>
-      <div
-        id="container"
-        className=" m-10 p-8 grid-rows-3 grid justify-center  gap-8 content-center items-center text-xl"
-      >
-        <Input />
-        <br />
-        <List />
-      </div>
+      <Mycontext.provider value={{ array }}>
+        <div
+          id="container"
+          className="grid items-center content-center justify-center grid-rows-3 gap-8 p-8 m-10 text-xl "
+        >
+          <Input />
+          <br />
+          <List />
+        </div>
+      </Mycontext.provider>
     </>
   );
 }
